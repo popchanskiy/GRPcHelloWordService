@@ -1,0 +1,7 @@
+/.idea/
+git.idea/
+*.fdc
+*.class
+*.iml
+target/
+dependency-reduced-pom.xm

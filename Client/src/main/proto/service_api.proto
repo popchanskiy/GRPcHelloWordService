@@ -1,0 +1,16 @@
+syntax = "proto3";
+package com.example.grpc;
+
+message RequestExample{
+  string name = 1;
+  int32 currCount = 2;
+  repeated string phones = 3 ;
+}
+
+message ResponseExample{
+  string helloMessage = 1;
+}
+
+service HelloService{
+  rpc doHello (RequestExample) returns (ResponseExample);
+}
